@@ -29,3 +29,24 @@
 .transparent-frame.fixed{
     position: fixed;
 }
+
+.return-button {
+    position: absolute; /* Position fixed to keep it fixed on the screen */
+    top: 0px;
+    left: 0px;
+    z-index: 999; /* Ensure it appears above other content */
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button img{
+	width: 5vw; /* 5% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
+.return-button:hover {
+	background-color: #45a049;
+}
