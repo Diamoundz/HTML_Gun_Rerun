@@ -1,0 +1,17 @@
+.image-container {
+    position: relative;
+    width: 20vw; 
+}
+.image-container{
+    position: fixed;
+}
+
+
+.image-container img {
+    display: block;
+    width: 15%;
+    height: auto;
+}
+
+
+  
