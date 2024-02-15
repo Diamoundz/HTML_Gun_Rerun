@@ -1,5 +1,12 @@
 .centered{
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.fixed{
+    position: fixed;
+}
+.absolute{
+    position: absolute;
 }
 .transparent-frame {
     border: 10px solid rgba(0, 0, 0, 0.5); /* 0.5 is the transparency value */
