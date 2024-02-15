@@ -1,13 +1,39 @@
 .image-container {
-    position: relative;
-    width: 20vw; 
+    width: 100%;
+    height: auto; /* Set the height to 100% of the viewport height */
+  }
+  
+.image-layer-1 {
+    z-index: -1;
+}
+<<<<<<< HEAD
+=======
+
+.image-layer-2 {
+    z-index: -2;
 }
 
-.image-container img {
-    display: block;
-    width: 15%;
-    height: auto;
+.image-layer-3 {
+    z-index: -3;
 }
+>>>>>>> a1096b82a2b75424ec4130d1974e1053417303c7
+
+.image-container img {
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide any overflow content */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  }
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 
 
   

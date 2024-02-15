@@ -1,5 +1,12 @@
 .centered{
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.fixed{
+    position: fixed;
+}
+.absolute{
+    position: absolute;
 }
 .transparent-frame {
     border: 10px solid rgba(0, 0, 0, 0.5); /* 0.5 is the transparency value */
@@ -29,6 +36,7 @@
 .transparent-frame.fixed{
     position: fixed;
 }
+<<<<<<< HEAD
 
 .return-button {
     position: absolute; /* Position fixed to keep it fixed on the screen */
@@ -50,3 +58,5 @@
 .return-button:hover {
 	background-color: #45a049;
 }
+=======
+>>>>>>> a1096b82a2b75424ec4130d1974e1053417303c7
