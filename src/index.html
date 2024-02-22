@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
 
     <title>Gun Rerun Home</title>
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/text.css" />
+    <link rel="stylesheet" href="../styles/image.css" />
 
     <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
           HTML5 fonctionne correctement avec les anciennes versions de
@@ -15,11 +18,13 @@
   </head>
 
   <body>
+
     <!-- Voici notre en‑tête principale utilisée dans toutes les pages
           de notre site web -->
     <header>
-      <h1>En-tête</h1>
+      <h1>Gun Rerun</h1>
     </header>
+    <div class="container">
 
     <nav>
       <ul>
@@ -28,38 +33,29 @@
         <li><a href="DLCPage.html">DLC</a></li>
       </ul>
 
-      <!-- Un formulaire de recherche est une autre façon de naviguer de
-            façon non‑linéaire dans un site. -->
-
-      <form>
-        <input type="search" name="q" placeholder="Rechercher" />
-        <input type="submit" value="Lancer !" />
-      </form>
     </nav>
 
     <!-- Ici nous mettons le contenu de la page -->
     <main>
+      
       <!-- Il contient un article -->
       <article>
         <h2>What's this game</h2>
         <p>
-         You don't know well find out using the trailer below
+         If you don't know, find out using our trailer below.
         </p>
 
         <h3>Trailer video</h3>
         <p>
           <iframe width="560" height="315" 
-          src="https://www.youtube.com/embed/BcPuPC2l_sk?si=NtySpZODgg2svzAZ" 
-          title="YouTube video player" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
-        </iframe>
-          
-
+            src="https://www.youtube.com/embed/BcPuPC2l_sk?si=NtySpZODgg2svzAZ" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </p>
        
           
-      
       </article>
 
       <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
@@ -67,14 +63,15 @@
       <aside>
         <h2>En relation</h2>
         <ul>
-          <li><a href="#">Combien j'aime être près des rivages</a></li>
+          <li><a href="#">Steam page</a></li>
         </ul>
       </aside>
+      </div>
     </main>
 
     <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
     <footer>
-      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+      <p>©Copyright 2024 by Aengel. All rights reserved.</p>
     </footer>
   </body>
 </html>

@@ -15,6 +15,8 @@ video {
 .image-layer-1 {
     z-index: -1;
 }
+<<<<<<< HEAD
+=======
 
 .image-layer-2 {
     z-index: -2;
@@ -23,6 +25,7 @@ video {
 .image-layer-3 {
     z-index: -3;
 }
+>>>>>>> a1096b82a2b75424ec4130d1974e1053417303c7
 
 .image-container img {
     padding: 0%;
