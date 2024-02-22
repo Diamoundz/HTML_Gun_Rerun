@@ -1,38 +1,117 @@
-.centered{
-    align-items: center;
-    justify-content: center;
-}
-.fixed{
-    position: fixed;
-}
-.absolute{
-    position: absolute;
-}
-.transparent-frame {
-    border: 10px solid rgba(0, 0, 0, 0.5); /* 0.5 is the transparency value */
-    padding: 10px;
-}
-.transparent-frame.no-border {
-    border: none;
-    padding: 0;
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: auto;
+    padding: 0;
+    background-image: url('../img/neonWalls.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(28, 204, 145, 0.301);
+    padding: 50px;
+    border-radius: 10px;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dlc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    position: relative; /* Added position relative for positioning absolute elements */
+}
+
+.dlc-container {
+    border-radius: 50px 5px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
-.transparent-frame.neongreen
-{
-    background-color: darkseagreen;
+
+.dlc-container:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
 }
-.transparent-frame.fixed{
-    position: fixed;
+
+.dlc img {
+    max-width: 100%;
+    animation: scaleIn 1s ease-in-out;
+    transition: filter 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.dlc-info {
+    flex: 1;
+    margin-left: 20px;
+    position: absolute; /* Position the background panel relative to this container */
+    top: 40px;
+    left: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px;
+    color: white; /* Font color changed to white */
+}
+
+
+price {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }

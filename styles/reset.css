@@ -12,8 +12,4 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, 
-
-section {
-	display: block;
-}
+footer, header, hgroup, menu, nav,
