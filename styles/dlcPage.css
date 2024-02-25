@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     margin: 0;
-    padding: 0;
+    padding-top: 180px;
     background-image: url('../img/neonWalls.jpg');
     background-size: cover;
     background-position: center;
@@ -13,43 +13,127 @@ body {
 }
 
 .container {
-    background-color: rgba(28, 204, 145, 0.301);
+    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
     padding: 50px;
     border-radius: 10px;
-    width: 85%;
+    width: 80%;
+    height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+}
+
+.top-bar {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 70%),
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 80%),
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 95%),
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.special-offers-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-button {
+    background: url("../img/DALL_E_2024-02-25_19.52.56-removebg-preview.png") center/contain no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top : -10px;
+    padding: 100px 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: brightness(1); /* Initial brightness value */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+.home-button:hover {
+    filter: brightness(1.5);
+    transform: rotate(180deg);
+}
+
+.header-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/sophisticated-background.jpg') center/cover;
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .dlc {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 400px; /* Set height to 30% of the viewport height */
     padding: 20px;
-    animation: fadeInUp 1s ease-in-out;
-    position: relative; /* Added position relative for positioning absolute elements */
+    animation: fadeI0nUp 1s ease-in-out;
+    position: relative;
 }
 
 .dlc-container {
-    background-size: auto;
     width: 100%;
-    height: 500px; 
+    height: 100%; /* Set height to 100% to take the full height of .dlc */
     border-radius: 50px 5px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
+
 .dlc-container.scrap-city{
-    background: url("../img/deus-ex_mankind_divided_review_shots_2-1.jpg") center/contain ;
+    background: url("../img/deus-ex_mankind_divided_review_shots_2-1.jpg") ;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .dlc-container.neon-skins{
-    background: url("../img/ghostrunner_new.png") center/contain ;
+    background: url("../img/ghostrunner_new.png") ;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .dlc-container.weapon-extension{
-    background: url("../img/weapons.png") center/contain ;
+    background: url("../img/weapons.png") ;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .dlc-container:hover {
@@ -59,19 +143,19 @@ header {
 
 .dlc-info {
     flex: 1;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 30px;
+    margin: 20px;
+    padding: 10px;
     width: 80%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
     border-radius: 10px;
-    color: white; /* Font color changed to white */
+    color: white;
     transition: transform 0.3s ease-in-out;
+    text-align: left;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Added box shadow for a more sophisticated look */
 }
-.dlc-container:hover .dlc-info {
-    transform: translateX(5%) scale(1.05); 
 
+.dlc-container:hover .dlc-info {
+    transform: translateX(5%) scale(1.05);
 }
 
 
@@ -96,6 +180,7 @@ footer {
     text-align: center;
     padding: 10px;
     animation: fadeIn 1s ease-in-out;
+    color: white;
 }
 
 @keyframes fadeIn {
