@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/neonWalls.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(28, 204, 145, 0.301);
+    padding: 50px;
+    border-radius: 10px;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dlc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    position: relative; /* Added position relative for positioning absolute elements */
+}
+
+.dlc-container {
+    background-size: auto;
+    width: 100%;
+    height: 500px; 
+    border-radius: 50px 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.dlc-container.scrap-city{
+    background: url("../img/deus-ex_mankind_divided_review_shots_2-1.jpg") center/contain ;
+}
+.dlc-container.neon-skins{
+    background: url("../img/ghostrunner_new.png") center/contain ;
+}
+.dlc-container.weapon-extension{
+    background: url("../img/weapons.png") center/contain ;
+}
+
+.dlc-container:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.dlc-info {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px;
+    color: white; /* Font color changed to white */
+    transition: transform 0.3s ease-in-out;
+}
+.dlc-container:hover .dlc-info {
+    transform: translateX(5%) scale(1.05); 
+
+}
+
+
+price {
+    font-weight: bold;
+}
+
+button {
+    background-color: #ff0000;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00ffaa;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
