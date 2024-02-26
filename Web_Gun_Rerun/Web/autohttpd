@@ -5,14 +5,15 @@ from http.server import HTTPServer
 from http.server import CGIHTTPRequestHandler
 from random import randint
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-os.chdir("www")
+os.chdir(os.path.join(script_dir, "www"))
 
-port = randint(8000,8999)
+port = randint(8000, 8999)
 
-print(("Le port du serveur est %d" % (port) ))
+with open(os.path.join(script_dir, "..\..\port.txt"), "w") as f:
+    f.write(str(port))
 
 serv = HTTPServer(("", port), CGIHTTPRequestHandler)
 serv.serve_forever()
-
 
