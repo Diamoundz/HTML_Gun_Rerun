@@ -1,98 +1,122 @@
-.two-column-layout{
-    display: flex;
-    color: white;
-    align-items: center;
+    .two-column-layout{
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
 
-}
-.registration-form {
-    /* Styles for the registration form */
-    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
-    padding: 40px;
-    border-radius: 10px;
-    width: 60%;
-    margin: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.register-confirm{
-    color: turquoise;
-    text-align: center;
-    padding: 10px;
-}
-.login-form{
+    }
+    .registration-form {
+        text-align: center;
         /* Styles for the registration form */
         background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
-        padding: 50px;
+        padding: 40px;
         border-radius: 10px;
         width: 60%;
-        margin: 20px auto;
+        margin: 50px;
+        margin-top: 10px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-confirm{
+        color: turquoise;
+        text-align: center;
+        padding: 10px;
+    }
+    .login-form{
+        /* Styles for the registration form */
+        background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
+
+        border-radius: 10px;
+        width: 60%;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-}
-.registration-container{
-    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
-    padding: 8px;
-    width: 80%;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    display: flex;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    overflow: hidden;
-}
-.confirm-button-container{
-    display: flex;
-    justify-content: center;
-}
-.confirm-button-container button:disabled {
-    background-color: #ccc; /* Grey background color for disabled state */
-    color: #666; /* Darker text color for disabled state */
-
-}
-
-
-.field-container{
-    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
-    padding: 8px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width: 80%;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    display: flex;
-    border-radius: 10px;
-    flex-direction: column;
-    justify-content: start;
-    align-items:center;
-    overflow: hidden;
-}
-.error-message {
-    color: #ff0000; /* Red color for error messages */
-    font-size: 14px;
-    margin-top: 5px;
-    display: block;
-}
-
-@media only screen and (max-width: 1300px) {
-    .two-column-layout {
-        flex-direction: column;
-
-        width: 100%;
     }
     .registration-container{
+        background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
         width: 80%;
+        height: auto;
+        min-height: 85vh;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        border-radius: 20px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+        overflow: hidden;
+    }
+    .confirm-button-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .confirm-button-container button:disabled {
+        background-color: #ccc; /* Grey background color for disabled state */
+        color: #666; /* Darker text color for disabled state */
+
+    }
+    .switch-button {
+        background-color: #606d6065;
+        color: white;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 70%;
+    }
+    
+    .switch-button:hover {
+        background-color: #00000098;
     }
 
 
-}
+    .field-container{
+        background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
+        padding: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 80%;
+        height: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: start;
+        align-items:center;
+        overflow: hidden;
+    }
+    .error-message {
+        color: #ff0000; /* Red color for error messages */
+        font-size: 14px;
+        margin-top: 5px;
+        display: block;
+    }
+
+
+    @media only screen and (max-width: 1300px) {
+        .two-column-layout {
+            flex-direction: column;
+
+            width: 100%;
+        }
+        .registration-container{
+            width: 80%;
+        }
+
+
+    }

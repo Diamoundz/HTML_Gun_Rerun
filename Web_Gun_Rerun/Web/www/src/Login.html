@@ -14,79 +14,90 @@
     <div class="top-bar">
         <a href="../index.html" class="home-button"></a>
     </div>
+
     <div class="registration-container">
         <div class="two-column-layout">
 
-            <div class="registration-form">
-                <h2>Login</h2>
+            <div class="registration-form" id ="loginForm">
+                <h2>Log in</h2>
                 <form id="login-form" action="../htbin/login.py" method="post" onsubmit="return validateLoginForm()">
 
                     <div class="field-container">
                         <label for="loginUsername">Username:</label>
-                        <input type="text" id="loginUsername" name="username" required>
+                        <input type="text" id="loginUsername" name="username" required
+                        placeholder="eg. user123">
                         <span id="loginUsernameError" class="error-message"></span>
                     </div>
 
                     <div class="field-container">
                         <label for="loginPassword">Password:</label>
-                        <input type="loginPasswordError" id="loginPassword" name="userpwd" required>
+                        <input type="password" id="loginPasswordError" name="userpwd" required
+                        placeholder="password">
                     </div>
 
                     <div class="confirm-button-container">
                         <button type="submit" id="loginSubmitBtn">Log In</button>
                     </div>
+
+                    <div class="confirm-button-container">
+                        <button class="switch-button" type="button" id="toggleRegisterBtn">No account yet ?</button>
+                    </div>
                 </form>
             </div>
 
-            <div>
-                OR
-            </div>
-
-            <div class="registration-form">
+            <div class="registration-form slide-in-left" id="registerForm" style="display: none;">
                 <h2>Register</h2>
                 <form id="registration-form" action="../htbin/register.py" method="post" onsubmit="return validateRegistrationForm()">
 
                     <div class="field-container">
                         <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstname" required>
+                        <input type="text" id="firstName" name="firstname" required
+                        placeholder="first name">
                         <span id="firstNameError" class="error-message"></span>
                     </div>
                     
                     <div class="field-container">
                         <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastname" required>
+                        <input type="text" id="lastName" name="lastname" required
+                        placeholder="last name">
                         <span id="lastNameError" class="error-message"></span>
                     </div>
 
                     <div class="field-container">
-                        <label for="dob">Date of birth (dd/mm/yyyy):</label>
-                        <input type="text" id="dob" name="birthdate">
+                        <label for="dob">Date of birth:</label>
+                        <input type="text" id="dob" name="birthdate"
+                        placeholder="eg. 31/12/2001">
                         <span id="dobError" class="error-message"></span>
                     </div>
 
                     <div class="field-container">
-                        <label for="registerUsername">Username (min. 6 characters):</label>
-                        <input type="text" id="registerUsername" name="username" required>
+                        <label for="registerUsername">Username:</label>
+                        <input type="text" id="registerUsername" name="username" required
+                        placeholder="eg. user123">
                         <span id="usernameError" class="error-message"></span>
                     </div>
 
                     <div class="field-container">
-                        <label for="registerPassword">Password:</label>
-                        <input type="password" id="registerPassword" name="userpwd" required>
-                        <span id="passwordError" class="error-message"></span>
-                    </div>
-
-                    <div class="field-container">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="useremail" required>
+                        <input type="email" id="email" name="useremail" required
+                        placeholder="eg. your@mail.com">
                         <span id="emailError" class="error-message"></span>
                     </div>
 
+                    <div class="field-container">
+                        <label for="registerPassword">Password:</label>
+                        <input type="password" id="registerPassword" name="userpwd" required
+                        placeholder="password">
+                        <span id="passwordError" class="error-message"></span>
+                    </div>
                     
                     <div class = "register-confirm" id="registerConfirm"></div>
 
                     <div class="confirm-button-container">
                         <button type="submit" id="registerSubmitBtn">Register</button>
+                    </div>
+                    <div class="confirm-button-container">
+                        <button class="switch-button" type="button" id="toggleLoginBtn">Already have an Account?</button>
                     </div>
 
                 </form>
@@ -101,6 +112,7 @@
 
     <script src="register-validation.js"></script>
     <script src="login-validation.js"></script>
+    <script src="registration-switch.js"></script>
     <noscript>Please enable JavaScript to use this site effectively.</noscript>
 </body>
 

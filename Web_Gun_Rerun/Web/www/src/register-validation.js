@@ -121,7 +121,7 @@ function validatePassword() {
 
     if (!passwordRegex.test(password)) {
         // Check individual conditions and display specific error messages
-        if (password.length < 1) {
+        if (password.length < 12) {
             passwordError.textContent = "Needs at least 12 characters.";
         } else if (!/[a-z]/.test(password)) {
             passwordError.textContent = "Needs at least one lowercase letter.";

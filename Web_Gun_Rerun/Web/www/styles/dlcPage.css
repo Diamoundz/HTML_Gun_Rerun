@@ -71,7 +71,7 @@
 .price {
     margin: 10px;
     font-style:italic;
-    font-weight: bold;
+    color: rgb(100, 255, 222);
 }
 
 @media only screen and (max-width: 1300px) {
