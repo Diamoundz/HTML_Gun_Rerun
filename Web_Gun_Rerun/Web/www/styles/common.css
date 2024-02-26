@@ -1,0 +1,207 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding-top: 180px;
+    background-image: url('../img/neonWalls.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 100vh;
+}
+label{
+    margin: 5px;
+}
+input{
+    margin: 5px;
+}
+
+.container {
+    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    overflow: hidden;
+}
+
+.login-button {
+    width: 60%;
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.login-panel:hover
+{
+    transform: translateX(-20px);
+    filter: brightness(1.5);
+}
+
+.login-panel{
+    width: auto;
+    margin-right: -3%;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: auto;
+    max-width: 80%;
+    min-width: 110px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    animation: fadeInLeft 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+
+.header-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bottom-bar {
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+
+}
+
+.top-bar {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 70%),
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 80%),
+                linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 95%),
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    background: url("../img/DALL_E_2024-02-25_19.52.56-removebg-preview.png") center/contain no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top : -10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: brightness(1); /* Initial brightness value */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+.home-button:hover {
+    filter: brightness(1.5);
+    transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

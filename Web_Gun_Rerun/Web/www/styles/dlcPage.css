@@ -1,0 +1,85 @@
+.special-offers-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dlc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px; /* Set height to 30% of the viewport height */
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    position: relative;
+}
+
+.dlc-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dlc-container.scrap-city{
+    background: url("../img/deus-ex_mankind_divided_review_shots_2-1.jpg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dlc-container.neon-skins{
+    background: url("../img/ghostrunner_new.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dlc-container.weapon-extension{
+    background: url("../img/weapons.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.dlc-container:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+
+.dlc-info {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Added box shadow for a more sophisticated look */
+}
+
+.dlc-container:hover .dlc-info {
+    transform: translateX(5%) scale(1.05);
+}
+
+
+.price {
+    margin: 10px;
+    font-style:italic;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px) {
+    .dlc-container {
+        background-size: auto !important; /* Override the background-size for smaller screens */
+    }
+    .dlc-info{
+        margin: 15px !important;
+        padding: 15px;
+    }
+}
