@@ -69,8 +69,52 @@ body {
     transform: rotate(180deg);
 }
 
+.bottom-bar {
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+
+}
+.login-panel{
+    width: 15%;
+    margin-right: -3%;
+    height: 50px;
+    max-width: 80%;
+    min-width: 110px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    animation: fadeInLeft 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.login-button {
+    width: 60%;
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.login-panel:hover
+{
+    transform: translateX(-20px);
+    filter: brightness(1.5);
+}
+
 .header-container {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/sophisticated-background.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
     border-radius: 10px;
     padding: 50px;
     margin-bottom: 20px;
@@ -102,15 +146,15 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 400px; /* Set height to 30% of the viewport height */
+    height: 600px; /* Set height to 30% of the viewport height */
     padding: 20px;
-    animation: fadeI0nUp 1s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
     position: relative;
 }
 
 .dlc-container {
     width: 100%;
-    height: 100%; /* Set height to 100% to take the full height of .dlc */
+    height: 100%;
     border-radius: 50px 5px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -118,33 +162,34 @@ header {
 
 .dlc-container.scrap-city{
     background: url("../img/deus-ex_mankind_divided_review_shots_2-1.jpg") ;
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .dlc-container.neon-skins{
     background: url("../img/ghostrunner_new.png") ;
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .dlc-container.weapon-extension{
     background: url("../img/weapons.png") ;
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-
 }
+
 
 .dlc-container:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
 }
 
+
 .dlc-info {
     flex: 1;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     width: 80%;
     background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
     border-radius: 10px;
@@ -159,7 +204,9 @@ header {
 }
 
 
-price {
+.price {
+    margin: 10px;
+    font-style:italic;
     font-weight: bold;
 }
 
@@ -167,6 +214,7 @@ button {
     background-color: #ff0000;
     color: black;
     padding: 10px;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -203,11 +251,32 @@ footer {
     }
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes scaleIn {
     from {
         transform: scale(0.5);
     }
     to {
         transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .dlc-container {
+        background-size: auto !important; /* Override the background-size for smaller screens */
+    }
+    .dlc-info{
+        margin: 15px !important;
+        padding: 15px;
     }
 }
