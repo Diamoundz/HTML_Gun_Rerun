@@ -2,43 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gun Rerun Home</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/text.css" />
-    <link rel="stylesheet" href="./styles/image.css" />
 
-    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
-          HTML5 fonctionne correctement avec les anciennes versions de
-          Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <title>Gun Rerun Home</title>
   </head>
 
   <body>
+    
+    <div class="top-bar">
+      <a href="index.html" class="home-button"></a>
 
-    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
-          de notre site web -->
-    <header>
-      <h1>Gun Rerun</h1>
-    </header>
-    <div class="container">
-
-    <nav>
-      <ul>
-        <li><a href="src/Contact.html">Contact</a></li>
-        <li><a href="src/DLCPage.html">DLC</a></li>
-      </ul>
-
-    </nav>
-
-    <!-- Ici nous mettons le contenu de la page -->
+      <div class="button-container">
+        <a href="src/DLCPage.html" class="nav-button">DLC</a>
+        <a href="src/Contact.html" class="nav-button">Contact</a>
+      </div>
+    </div>
+  
     <main>
-      
-      <!-- Il contient un article -->
+
+      <div class="container">
+   
       <article>
+        <h1 class="title">Gun Rerun</h1>
         <h2>What's this game</h2>
         <p>
          If you don't know, find out using our trailer below.
@@ -57,21 +45,24 @@
           
       </article>
 
-      <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
-            principal -->
+      
       <aside>
         <h2>En relation</h2>
         <ul>
           <li><a href="#">Steam page</a></li>
         </ul>
       </aside>
-      </div>
-    </main>
 
-    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    </div>
     <footer>
       <p>©Copyright 2024 by Aengel. All rights reserved.</p>
     </footer>
+
+    </main>
+  
+
+    
+    
   </body>
 </html>
 
