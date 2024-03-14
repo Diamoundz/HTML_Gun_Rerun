@@ -101,11 +101,18 @@
         overflow: hidden;
     }
     .error-message {
-        color: #ff0000; /* Red color for error messages */
+        color: #ff0000; 
         font-size: 14px;
         margin-top: 5px;
         display: block;
     }
+    .success-message {
+        color: #3cdf62;
+        font-size: 14px;
+        margin-top: 5px;
+        display: block;
+    }
+    
 
 
     @media only screen and (max-width: 1300px) {
