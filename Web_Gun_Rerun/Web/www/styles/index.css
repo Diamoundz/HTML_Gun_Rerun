@@ -3,3 +3,31 @@
     font-weight: bold;
     
 }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Ensure the video fits within its container */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Adjustments for smaller screens */
+    .video-container {
+        padding-bottom: 75%; /* Adjusted aspect ratio for smaller screens */
+    }
+
+    .video-container iframe {
+        width: 100%; /* Full width on smaller screens */
+        height: 100%; /* Full height on smaller screens */
+    }
+}

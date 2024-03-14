@@ -36,44 +36,6 @@ input{
     overflow: hidden;
 }
 
-.login-button {
-    width: 60%;
-    background-color: #383838;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-
-}
-
-.login-panel:hover
-{
-    transform: translateX(-20px);
-    filter: brightness(1.5);
-}
-
-.login-panel{
-    width: auto;
-    margin-right: -3%;
-    padding: 8px;
-    padding-left: 20px;
-    padding-right: 5%;
-    height: auto;
-    max-width: 10vw;
-    min-width: 110px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
-    animation: fadeInLeft 1s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
-
 
 .header-container {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
@@ -130,11 +92,46 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 100%; /* Limit maximum width */
     height: auto;
     z-index: 1000;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.login-panel {
+    padding: 10px;
+    margin-right: -1vw;
+    max-width: 200px; /* Limit maximum width */
+    min-width: 110px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    animation: fadeInLeft 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 180px; /* Limit maximum width */
+}
+
+/* Hover effect */
+.login-panel:hover {
+    transform: translateX(-10px);
+    filter: brightness(1.5);
 }
 
 .top-bar {
@@ -150,7 +147,7 @@ footer {
     height: 100px;
     z-index: 1000;
     display: flex;
-    justify-content: left;
+    align-items: center;
     padding-left: 50px;
 }
 
@@ -166,6 +163,36 @@ footer {
     filter: brightness(1); /* Initial brightness value */
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     animation: rotateIn 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+
+    margin-right: 20px; /* Keep this margin for spacing */
+    
+}
+
+
+.login-button {
+    margin-left: auto;
+    color: white;
+    margin-right: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: brightness(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #73737300;
+}
+
+.login-button:hover{
+    filter: brightness(0.5);
+}
+
+.nav-button:hover{
+    filter: brightness(0.5);
 }
 
 .home-button:hover {
@@ -175,15 +202,17 @@ footer {
 
 .button-container {
     display: flex;
-    width: auto;
+    align-items: center;
+    margin-left: 10px; /* Add margin to the button container */
 }
 
 .nav-button {
     color: white;
+    margin-right: 20px;
     width: 100px;
     height: 100px;
     border: none;
-    border-radius: 50%;
+    border-radius: 5px;
     cursor: pointer;
     filter: brightness(1);
     display: flex;
@@ -197,7 +226,6 @@ footer {
 .nav-button:hover{
     filter: brightness(0.5);
 }
-*/
 
 
 
@@ -211,9 +239,23 @@ footer {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items:center;
     overflow: hidden;
+}
+
+.styled-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #92929200;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.styled-link:hover {
+    background-color: #748fac75;
 }
 
 
@@ -266,6 +308,34 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 800px) {
+    /* Adjustments for smaller screens */
+    .top-bar {
+        padding-left: 20px; /* Adjusted padding for smaller screens */
+        padding-right: 20px; /* Adjusted padding for smaller screens */
+    }
+    
+    .home-button {
+        width: 130x; /* Adjusted width for smaller screens */
+        height: 130px; /* Adjusted height for smaller screens */
+    }
 
+    .nav-button {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+        padding-left: 0%;
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .login-button {
+        width: 50px;
+        margin-right: 0px;
+        font-size: 18px;
+    }
 }
