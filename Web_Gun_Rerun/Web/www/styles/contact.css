@@ -3,7 +3,7 @@ body{
     overflow: hidden;
 }
 .message-panel {
-    background:  linear-gradient(to bottom, rgba(197, 197, 197, 0.356), rgb(204, 204, 204));
+    background:  linear-gradient(to bottom, rgba(197, 197, 197, 0.15), rgb(204, 204, 204));
     padding-top: 10px;
     width: 100%;
     height: 100%;
