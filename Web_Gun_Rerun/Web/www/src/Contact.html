@@ -1,18 +1,14 @@
-<!doctype html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/common.css" />
-
-  </head>
-
-  <body>
-
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbox</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
 
     <div class="top-bar">
       <a href="../index.html" class="home-button"></a>
@@ -23,21 +19,44 @@
       
     </div>
 
-    <div class="container">
+  <div class="contact-main-container">
+      <div class="chat-container">
+        <div class="message-panel">
 
-      
-  
-        
-        <h1>Contact Us</h1>
-        <p>Please feel free to reach out to us with any questions or feedback.</p>
-        <div class="contact-info">
-            <p>Email: </p>
-            <p>Phone: </p>
-            <p>Address: </p>
+          <div class="message left">
+            <div class="message-info">
+              <div class="message-time">10:30 AM</div>
+              <div class="profile-picture"></div>
+            </div>
+            <div class="message-text">Hey</div>
+          </div>
+
+          <div class="message">
+            <div class="message-text">Hi</div>
+            <div class="message-info">
+              <div class="message-time">10:30 AM</div>
+              <div class="profile-picture"></div>
+            </div>
+
+          </div>
+
+          <div class="message">
+            <div class="message-text">How was your day ? I was shopping.</div>
+            <div class="message-info">
+              <div class="message-time">10:30 AM</div>
+              <div class="profile-picture"></div>
+            </div>
+
+          </div>
+
+
+
         </div>
-    </div>
-
+        <div class = "message-input-container">
+          <input type="text" class="message-input" placeholder="Type your message...">
+          <button class="send-button">📨</button>
+        </div>
+      </div>  
+  </div>
 </body>
-
 </html>
-
