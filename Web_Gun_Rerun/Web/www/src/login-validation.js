@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isFormValid = validateLoginForm();
 
         if (!isFormValid) {
+            console.log("test");
             event.preventDefault(); // Prevent form submission if validation fails
         } else {
 

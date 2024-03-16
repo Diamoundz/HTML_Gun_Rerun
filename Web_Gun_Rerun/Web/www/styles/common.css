@@ -24,7 +24,9 @@ input{
     text-align: center;
     background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
     padding: 50px;
-    width: 80%;
+    width: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw  ;
     height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -102,8 +104,9 @@ footer {
 
 .login-panel {
     padding: 10px;
-    margin-right: -1vw;
-    max-width: 200px; /* Limit maximum width */
+    margin-right: -30px;
+    padding-right: 50px;
+    max-width: 200px;
     min-width: 110px;
     border-radius: 10px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
@@ -116,8 +119,9 @@ footer {
 }
 
 .login-button {
-    width: 100%;
-    background-color: #38383800;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #69696959;
     color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
@@ -161,15 +165,16 @@ footer {
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     animation: rotateIn 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
 
+    margin-left: 20px;
     margin-right: 20px; /* Keep this margin for spacing */
     
 }
 
 
-.login-button {
+.login-button-top-bar {
     margin-left: auto;
     color: white;
-    margin-right: 40px;
+    margin-right: 50px;
     width: 50px;
     height: 50px;
     border: none;
