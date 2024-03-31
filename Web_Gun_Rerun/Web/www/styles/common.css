@@ -294,7 +294,7 @@ footer {
 .itch-link {
     display: inline-block;
     padding: 10px 30px;
-    background-color: #f719198c;
+    background-color: #92929200;
     color: #fff;
     text-decoration: none;
     background: url("../img/itch.png") left/contain no-repeat;
@@ -367,7 +367,7 @@ footer {
     }
     
     .home-button {
-        width: 130x; /* Adjusted width for smaller screens */
+        
         height: 130px; /* Adjusted height for smaller screens */
     }
 
