@@ -41,7 +41,9 @@ input{
 .container2{
     text-align: center;
     background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
-    padding: 50px;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     width: 100%;
     height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -174,15 +176,16 @@ footer {
     z-index: 1000;
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    justify-content: space-between;
+
 }
 
 .home-button {
     background: url("../img/DALL_E_2024-02-25_19.52.56-removebg-preview.png") center/contain no-repeat;
     background-size: 100%;
     color: white;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -190,17 +193,20 @@ footer {
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     animation: rotateIn 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
 
-    margin-left: 20px;
-    margin-right: 20px; /* Keep this margin for spacing */
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 
 .login-button-top-bar {
     color: white;
-    margin-right: 20px;
-    width: 100px;
-    height: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    padding: 10px;
+    width: auto;
+    height: 50px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -210,7 +216,7 @@ footer {
     align-items: center;
     text-decoration: none;
     font-size: 22px;
-    margin-left: auto;
+
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -237,8 +243,9 @@ footer {
 
 .nav-button {
     color: white;
-    margin-right: 20px;
-    width: 100px;
+    margin: 20px;
+    padding: auto;
+    width: auto;
     height: 60px;
     border: none;
     border-radius: 5px;
@@ -360,39 +367,11 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    /* Adjustments for smaller screens */
-    .top-bar {
-        padding-left: 20px; /* Adjusted padding for smaller screens */
-        padding-right: 20px; /* Adjusted padding for smaller screens */
-    }
-    
-    .home-button {
-        
-        height: 130px; /* Adjusted height for smaller screens */
-    }
 
-    .nav-button {
-        width: 80px;
-        height: 50px;
-        margin-left: 0px;
-        padding-left: 0%;
-        font-size: 18px;
-    }
 
     .container {
         padding: 20px;
         width: 90%;
     }
 
-    .login-button {
-        width: 50px;
-        margin-right: 0px;
-        font-size: 18px;
-    }
-
-    .login-button-top-bar{
-        width: 50px;
-        margin-right: 0px;
-        font-size: 18px;
-    }
 }
