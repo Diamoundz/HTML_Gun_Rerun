@@ -38,6 +38,23 @@ input{
     overflow: hidden;
 }
 
+.container2{
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(18, 177, 156, 0.7), rgba(1, 30, 37, 0.9));
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: white;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    overflow: hidden;
+}
+
 
 .header-container {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
@@ -58,7 +75,7 @@ header {
 
 .title {
     font-size: 2.5em;
-
+    color: white;
     margin-bottom: 10px;
     animation: fadeInUp 1s ease-in-out;
 }
@@ -135,17 +152,25 @@ footer {
     filter: brightness(1.5);
 }
 
+.large-text{
+    font-size: 25px;
+}
+
 .top-bar {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 70%),
+    /*
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 70%),
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 80%),
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 95%),
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 100%);
+    */
+    background-color: rgba(24, 20, 20, 0.9);
     color: white;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 75px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -172,11 +197,10 @@ footer {
 
 
 .login-button-top-bar {
-    margin-left: auto;
     color: white;
-    margin-right: 50px;
-    width: 50px;
-    height: 50px;
+    margin-right: 20px;
+    width: 100px;
+    height: 60px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -186,14 +210,17 @@ footer {
     align-items: center;
     text-decoration: none;
     font-size: 22px;
-    background-color: #73737300;
+    margin-left: auto;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.login-button-top-bar:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .login-button:hover{
-    filter: brightness(0.5);
-}
-
-.nav-button:hover{
     filter: brightness(0.5);
 }
 
@@ -212,7 +239,7 @@ footer {
     color: white;
     margin-right: 20px;
     width: 100px;
-    height: 100px;
+    height: 60px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -222,13 +249,14 @@ footer {
     align-items: center;
     text-decoration: none;
     font-size: 22px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
 .nav-button:hover{
-    filter: brightness(0.5);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
 }
-
 
 
 .user-container{
@@ -246,19 +274,40 @@ footer {
     overflow: hidden;
 }
 
-.styled-link {
+.steam-link {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #92929200;
     color: #fff;
     text-decoration: none;
+    background: url("../img/steam.png") left/contain no-repeat;
+    background-size: 25px;
+    text-align: right;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
 }
 
-.styled-link:hover {
+.steam-link:hover {
     background-color: #748fac75;
 }
+
+.itch-link {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #f719198c;
+    color: #fff;
+    text-decoration: none;
+    background: url("../img/itch.png") left/contain no-repeat;
+    background-size: 25px;
+    text-align: right;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.itch-link:hover {
+    background-color: #748fac75;
+}
+
 
 
 @keyframes fadeIn {
@@ -323,7 +372,7 @@ footer {
     }
 
     .nav-button {
-        width: 50px;
+        width: 80px;
         height: 50px;
         margin-left: 0px;
         padding-left: 0%;
@@ -336,6 +385,12 @@ footer {
     }
 
     .login-button {
+        width: 50px;
+        margin-right: 0px;
+        font-size: 18px;
+    }
+
+    .login-button-top-bar{
         width: 50px;
         margin-right: 0px;
         font-size: 18px;
